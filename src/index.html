@@ -64,14 +64,14 @@
         <!-- order -->
         <section aria-labelledby="order__text" class="order">
             <a class="anchor" id="order__link"></a>
-            <h2 id="order__text">Заказать</h2>
+            <h2 id="order__text" class="sectionHeader">Заказать</h2>
             <div class="order__info section__wrap">
                 <nav>
-                    <a class="paragraph" href="" onclick="">Всё включено</a>
+                    <p class="paragraph order__info__link" data-active="yes" onclick="orderClick(this)">Всё включено</p>
                     <p> · </p>
-                    <a class="paragraph" href="">Дизайн</a>
+                    <p class="paragraph order__info__link" data-active="" onclick="orderClick(this)">Дизайн</p>
                     <p> · </p>
-                    <a class="paragraph" href="">Сайт</a>
+                    <p class="paragraph order__info__link" data-active="" onclick="orderClick(this)">Сайт</p>
                 </nav>
                 <div class="justContainer">
                     <div class="order__info__flexContainer">
@@ -91,7 +91,7 @@
         <!-- contacts -->
         <section aria-labelledby="contacts__text" class="contacts">
             <a class="anchor" id="contacts__link"></a>
-            <h2 id="contacts__text">Контакты</h2>
+            <h2 id="contacts__text" class="sectionHeader">Контакты</h2>
                 <div class="section__contacts">
                 <div class="section__contacts__mails section__wrap">
                     <h2>Почты</h2>
@@ -126,4 +126,5 @@
         </section>
     </main>
 </body>
+<script src="js/script.js"></script>
 </html>

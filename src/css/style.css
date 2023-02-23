@@ -75,13 +75,12 @@ section .section__wrap {
   box-shadow: 10px 10px 0px;
   border: 5px solid;
 }
+section .sectionHeader {
+  margin: 2rem 0;
+}
 
 main {
   padding-top: 10rem;
-}
-
-.sectionHeader {
-  margin-bottom: 1rem;
 }
 
 button {
@@ -112,14 +111,13 @@ input {
   visibility: hidden;
 }
 
-.portfolio a, .contacts a, a[data-active=yes] {
-  display: inline-block;
+.portfolio a, .contacts a {
   position: relative;
   z-index: 0;
   text-decoration: none;
   color: black;
 }
-.portfolio a::before, .contacts a::before, a[data-active=yes]::before {
+.portfolio a::before, .contacts a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -129,7 +127,7 @@ input {
   background-color: black;
   transition: height 0.1s ease-out;
 }
-.portfolio a:hover::before, .contacts a:hover::before, a[data-active=yes]:hover::before {
+.portfolio a:hover::before, .contacts a:hover::before {
   height: 5%;
 }
 
@@ -262,10 +260,15 @@ header .nav__text:hover {
 }
 .order nav {
   display: flex;
+  align-items: center;
 }
-.order nav a {
+.order nav .paragraph {
   color: black;
   text-decoration: none;
+}
+.order nav .paragraph[data-active=yes], .order nav .paragraph:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
 }
 .order nav p {
   margin: 0 0.5rem;
